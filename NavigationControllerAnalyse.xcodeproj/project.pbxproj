@@ -11,9 +11,14 @@
 		5872DC371FE3D57000040CC5 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 5872DC361FE3D57000040CC5 /* Assets.xcassets */; };
 		5872DC3A1FE3D57000040CC5 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 5872DC381FE3D57000040CC5 /* LaunchScreen.storyboard */; };
 		5872DC3D1FE3D57000040CC5 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 5872DC3C1FE3D57000040CC5 /* main.m */; };
+		C306251F1FE4076B00ADF1C4 /* MainListViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = C306251E1FE4076B00ADF1C4 /* MainListViewController.m */; };
+		C30625221FE4097600ADF1C4 /* BaseNavigationController.m in Sources */ = {isa = PBXBuildFile; fileRef = C30625211FE4097600ADF1C4 /* BaseNavigationController.m */; };
+		C30625261FE4138800ADF1C4 /* NormalTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = C30625251FE4138800ADF1C4 /* NormalTableViewCell.m */; };
+		CC0689C3DCECAA2A19E2A76B /* libPods-NavigationControllerAnalyse.a in Frameworks */ = {isa = PBXBuildFile; fileRef = BB62F8A1BCF3FF499908FF92 /* libPods-NavigationControllerAnalyse.a */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		0C9768ACBC8AE8426AEBDC94 /* Pods-NavigationControllerAnalyse.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-NavigationControllerAnalyse.release.xcconfig"; path = "Pods/Target Support Files/Pods-NavigationControllerAnalyse/Pods-NavigationControllerAnalyse.release.xcconfig"; sourceTree = "<group>"; };
 		5872DC2A1FE3D57000040CC5 /* NavigationControllerAnalyse.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = NavigationControllerAnalyse.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		5872DC2D1FE3D57000040CC5 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		5872DC2E1FE3D57000040CC5 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
@@ -21,6 +26,15 @@
 		5872DC391FE3D57000040CC5 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		5872DC3B1FE3D57000040CC5 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		5872DC3C1FE3D57000040CC5 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		9299628B9ADBF54053B28676 /* Pods-NavigationControllerAnalyse.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-NavigationControllerAnalyse.debug.xcconfig"; path = "Pods/Target Support Files/Pods-NavigationControllerAnalyse/Pods-NavigationControllerAnalyse.debug.xcconfig"; sourceTree = "<group>"; };
+		BB62F8A1BCF3FF499908FF92 /* libPods-NavigationControllerAnalyse.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-NavigationControllerAnalyse.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		C306251B1FE4057100ADF1C4 /* PrefixHeader.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = PrefixHeader.pch; sourceTree = "<group>"; };
+		C306251D1FE4076B00ADF1C4 /* MainListViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MainListViewController.h; sourceTree = "<group>"; };
+		C306251E1FE4076B00ADF1C4 /* MainListViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MainListViewController.m; sourceTree = "<group>"; };
+		C30625201FE4097600ADF1C4 /* BaseNavigationController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = BaseNavigationController.h; sourceTree = "<group>"; };
+		C30625211FE4097600ADF1C4 /* BaseNavigationController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = BaseNavigationController.m; sourceTree = "<group>"; };
+		C30625241FE4138800ADF1C4 /* NormalTableViewCell.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = NormalTableViewCell.h; sourceTree = "<group>"; };
+		C30625251FE4138800ADF1C4 /* NormalTableViewCell.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = NormalTableViewCell.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -28,17 +42,29 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				CC0689C3DCECAA2A19E2A76B /* libPods-NavigationControllerAnalyse.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		125B7276069E0968D155DF42 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				9299628B9ADBF54053B28676 /* Pods-NavigationControllerAnalyse.debug.xcconfig */,
+				0C9768ACBC8AE8426AEBDC94 /* Pods-NavigationControllerAnalyse.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
 		5872DC211FE3D57000040CC5 = {
 			isa = PBXGroup;
 			children = (
 				5872DC2C1FE3D57000040CC5 /* NavigationControllerAnalyse */,
 				5872DC2B1FE3D57000040CC5 /* Products */,
+				125B7276069E0968D155DF42 /* Pods */,
+				94B80DEAE530A2EE26FE9458 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -53,22 +79,45 @@
 		5872DC2C1FE3D57000040CC5 /* NavigationControllerAnalyse */ = {
 			isa = PBXGroup;
 			children = (
-				5880DD951FE3DC5F00632376 /* Controller */,
+				C30625231FE4137400ADF1C4 /* View */,
+				C306251C1FE4074C00ADF1C4 /* Controller */,
 				5872DC2D1FE3D57000040CC5 /* AppDelegate.h */,
 				5872DC2E1FE3D57000040CC5 /* AppDelegate.m */,
 				5872DC361FE3D57000040CC5 /* Assets.xcassets */,
 				5872DC381FE3D57000040CC5 /* LaunchScreen.storyboard */,
 				5872DC3B1FE3D57000040CC5 /* Info.plist */,
 				5872DC3C1FE3D57000040CC5 /* main.m */,
+				C306251B1FE4057100ADF1C4 /* PrefixHeader.pch */,
 			);
 			path = NavigationControllerAnalyse;
 			sourceTree = "<group>";
 		};
-		5880DD951FE3DC5F00632376 /* Controller */ = {
+		94B80DEAE530A2EE26FE9458 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				BB62F8A1BCF3FF499908FF92 /* libPods-NavigationControllerAnalyse.a */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		C306251C1FE4074C00ADF1C4 /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				C30625201FE4097600ADF1C4 /* BaseNavigationController.h */,
+				C30625211FE4097600ADF1C4 /* BaseNavigationController.m */,
+				C306251D1FE4076B00ADF1C4 /* MainListViewController.h */,
+				C306251E1FE4076B00ADF1C4 /* MainListViewController.m */,
 			);
 			path = Controller;
+			sourceTree = "<group>";
+		};
+		C30625231FE4137400ADF1C4 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				C30625241FE4138800ADF1C4 /* NormalTableViewCell.h */,
+				C30625251FE4138800ADF1C4 /* NormalTableViewCell.m */,
+			);
+			path = View;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -78,9 +127,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 5872DC561FE3D57000040CC5 /* Build configuration list for PBXNativeTarget "NavigationControllerAnalyse" */;
 			buildPhases = (
+				C8BA5585915CDF4D6D88AF0F /* [CP] Check Pods Manifest.lock */,
 				5872DC261FE3D57000040CC5 /* Sources */,
 				5872DC271FE3D57000040CC5 /* Frameworks */,
 				5872DC281FE3D57000040CC5 /* Resources */,
+				F667722275C0952400653D8F /* [CP] Embed Pods Frameworks */,
+				04A246F851FD3A8FC87D9738 /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -136,13 +188,67 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		04A246F851FD3A8FC87D9738 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-NavigationControllerAnalyse/Pods-NavigationControllerAnalyse-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		C8BA5585915CDF4D6D88AF0F /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-NavigationControllerAnalyse-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		F667722275C0952400653D8F /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-NavigationControllerAnalyse/Pods-NavigationControllerAnalyse-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		5872DC261FE3D57000040CC5 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				C30625221FE4097600ADF1C4 /* BaseNavigationController.m in Sources */,
 				5872DC3D1FE3D57000040CC5 /* main.m in Sources */,
+				C306251F1FE4076B00ADF1C4 /* MainListViewController.m in Sources */,
 				5872DC2F1FE3D57000040CC5 /* AppDelegate.m in Sources */,
+				C30625261FE4138800ADF1C4 /* NormalTableViewCell.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -266,10 +372,14 @@
 		};
 		5872DC571FE3D57000040CC5 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 9299628B9ADBF54053B28676 /* Pods-NavigationControllerAnalyse.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 49YMBTW8W3;
+				GCC_INCREASE_PRECOMPILED_HEADER_SHARING = NO;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "$(SRCROOT)/NavigationControllerAnalyse/PrefixHeader.pch";
 				INFOPLIST_FILE = NavigationControllerAnalyse/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
@@ -281,10 +391,14 @@
 		};
 		5872DC581FE3D57000040CC5 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 0C9768ACBC8AE8426AEBDC94 /* Pods-NavigationControllerAnalyse.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 49YMBTW8W3;
+				GCC_INCREASE_PRECOMPILED_HEADER_SHARING = NO;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "$(SRCROOT)/NavigationControllerAnalyse/PrefixHeader.pch";
 				INFOPLIST_FILE = NavigationControllerAnalyse/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";

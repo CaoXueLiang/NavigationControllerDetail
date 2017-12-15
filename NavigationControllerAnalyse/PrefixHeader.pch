@@ -1,0 +1,22 @@
+//
+//  PrefixHeader.pch
+//  NavigationControllerAnalyse
+//
+//  Created by 曹学亮 on 2017/12/15.
+//  Copyright © 2017年 caoxueliang.cn. All rights reserved.
+//
+
+#ifndef PrefixHeader_pch
+#define PrefixHeader_pch
+
+#import <YYCategories/YYCategories.h>
+
+#define kStatusBarHeight [[UIApplication sharedApplication] statusBarFrame].size.height
+#define kNavBarHeight 44.0
+#define KTopHeight kStatusBarHeight + kNavBarHeight
+#define KTarbarHeight  (kDevice_Is_iPhoneX ? 83 : 49)
+#define KTabbarSafeBottomMargin  (kDevice_Is_iPhoneX ? 34 : 0)
+
+#define kDevice_Is_iPhoneX ([UIScreen instancesRespondToSelector:@selector(currentMode)] ? CGSizeEqualToSize(CGSizeMake(1125, 2436), [[UIScreen mainScreen] currentMode].size) : NO)
+
+#endif /* PrefixHeader_pch */
