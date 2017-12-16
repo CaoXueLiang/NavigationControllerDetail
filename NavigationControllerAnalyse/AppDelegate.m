@@ -32,6 +32,9 @@
     UINavigationBar *navigationBarAppearance = [UINavigationBar appearance];
     [navigationBarAppearance setBackgroundImage:[UIImage imageWithColor:[UIColor colorWithRed:(93 / 255.0) green:(174 / 255.0) blue:(33 / 255.0) alpha:1]] forBarMetrics:UIBarMetricsDefault];
     
+    //去掉UINavigationBar下的那条线
+    [[UINavigationBar appearance] setShadowImage:[[UIImage alloc] init]];
+    
     //返回按钮的箭头颜色
     [navigationBarAppearance setTintColor:[UIColor whiteColor]];
     NSDictionary *textAttributes = @{

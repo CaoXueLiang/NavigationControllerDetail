@@ -11,6 +11,9 @@
 		5872DC371FE3D57000040CC5 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 5872DC361FE3D57000040CC5 /* Assets.xcassets */; };
 		5872DC3A1FE3D57000040CC5 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 5872DC381FE3D57000040CC5 /* LaunchScreen.storyboard */; };
 		5872DC3D1FE3D57000040CC5 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 5872DC3C1FE3D57000040CC5 /* main.m */; };
+		589B521E1FE4FC5300277109 /* GradualChangeController.m in Sources */ = {isa = PBXBuildFile; fileRef = 589B521D1FE4FC5300277109 /* GradualChangeController.m */; };
+		589B52221FE516F900277109 /* UIScrollView+APParallaxHeader.m in Sources */ = {isa = PBXBuildFile; fileRef = 589B52201FE516F900277109 /* UIScrollView+APParallaxHeader.m */; };
+		589B52251FE5185300277109 /* CustomNavigationBarView.m in Sources */ = {isa = PBXBuildFile; fileRef = 589B52241FE5185300277109 /* CustomNavigationBarView.m */; };
 		C306251F1FE4076B00ADF1C4 /* MainListViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = C306251E1FE4076B00ADF1C4 /* MainListViewController.m */; };
 		C30625221FE4097600ADF1C4 /* BaseNavigationController.m in Sources */ = {isa = PBXBuildFile; fileRef = C30625211FE4097600ADF1C4 /* BaseNavigationController.m */; };
 		C30625261FE4138800ADF1C4 /* NormalTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = C30625251FE4138800ADF1C4 /* NormalTableViewCell.m */; };
@@ -26,6 +29,12 @@
 		5872DC391FE3D57000040CC5 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		5872DC3B1FE3D57000040CC5 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		5872DC3C1FE3D57000040CC5 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		589B521C1FE4FC5300277109 /* GradualChangeController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = GradualChangeController.h; sourceTree = "<group>"; };
+		589B521D1FE4FC5300277109 /* GradualChangeController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = GradualChangeController.m; sourceTree = "<group>"; };
+		589B52201FE516F900277109 /* UIScrollView+APParallaxHeader.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIScrollView+APParallaxHeader.m"; sourceTree = "<group>"; };
+		589B52211FE516F900277109 /* UIScrollView+APParallaxHeader.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIScrollView+APParallaxHeader.h"; sourceTree = "<group>"; };
+		589B52231FE5185300277109 /* CustomNavigationBarView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = CustomNavigationBarView.h; sourceTree = "<group>"; };
+		589B52241FE5185300277109 /* CustomNavigationBarView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = CustomNavigationBarView.m; sourceTree = "<group>"; };
 		9299628B9ADBF54053B28676 /* Pods-NavigationControllerAnalyse.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-NavigationControllerAnalyse.debug.xcconfig"; path = "Pods/Target Support Files/Pods-NavigationControllerAnalyse/Pods-NavigationControllerAnalyse.debug.xcconfig"; sourceTree = "<group>"; };
 		BB62F8A1BCF3FF499908FF92 /* libPods-NavigationControllerAnalyse.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-NavigationControllerAnalyse.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 		C306251B1FE4057100ADF1C4 /* PrefixHeader.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = PrefixHeader.pch; sourceTree = "<group>"; };
@@ -79,6 +88,7 @@
 		5872DC2C1FE3D57000040CC5 /* NavigationControllerAnalyse */ = {
 			isa = PBXGroup;
 			children = (
+				589B521F1FE516E200277109 /* Common */,
 				C30625231FE4137400ADF1C4 /* View */,
 				C306251C1FE4074C00ADF1C4 /* Controller */,
 				5872DC2D1FE3D57000040CC5 /* AppDelegate.h */,
@@ -90,6 +100,15 @@
 				C306251B1FE4057100ADF1C4 /* PrefixHeader.pch */,
 			);
 			path = NavigationControllerAnalyse;
+			sourceTree = "<group>";
+		};
+		589B521F1FE516E200277109 /* Common */ = {
+			isa = PBXGroup;
+			children = (
+				589B52211FE516F900277109 /* UIScrollView+APParallaxHeader.h */,
+				589B52201FE516F900277109 /* UIScrollView+APParallaxHeader.m */,
+			);
+			path = Common;
 			sourceTree = "<group>";
 		};
 		94B80DEAE530A2EE26FE9458 /* Frameworks */ = {
@@ -107,6 +126,8 @@
 				C30625211FE4097600ADF1C4 /* BaseNavigationController.m */,
 				C306251D1FE4076B00ADF1C4 /* MainListViewController.h */,
 				C306251E1FE4076B00ADF1C4 /* MainListViewController.m */,
+				589B521C1FE4FC5300277109 /* GradualChangeController.h */,
+				589B521D1FE4FC5300277109 /* GradualChangeController.m */,
 			);
 			path = Controller;
 			sourceTree = "<group>";
@@ -116,6 +137,8 @@
 			children = (
 				C30625241FE4138800ADF1C4 /* NormalTableViewCell.h */,
 				C30625251FE4138800ADF1C4 /* NormalTableViewCell.m */,
+				589B52231FE5185300277109 /* CustomNavigationBarView.h */,
+				589B52241FE5185300277109 /* CustomNavigationBarView.m */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -219,7 +242,7 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
-			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n";
 			showEnvVarsInLog = 0;
 		};
 		F667722275C0952400653D8F /* [CP] Embed Pods Frameworks */ = {
@@ -248,7 +271,10 @@
 				5872DC3D1FE3D57000040CC5 /* main.m in Sources */,
 				C306251F1FE4076B00ADF1C4 /* MainListViewController.m in Sources */,
 				5872DC2F1FE3D57000040CC5 /* AppDelegate.m in Sources */,
+				589B52221FE516F900277109 /* UIScrollView+APParallaxHeader.m in Sources */,
+				589B521E1FE4FC5300277109 /* GradualChangeController.m in Sources */,
 				C30625261FE4138800ADF1C4 /* NormalTableViewCell.m in Sources */,
+				589B52251FE5185300277109 /* CustomNavigationBarView.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

@@ -10,10 +10,11 @@
 #define PrefixHeader_pch
 
 #import <YYCategories/YYCategories.h>
+#import <Masonry/Masonry.h>
 
 #define kStatusBarHeight [[UIApplication sharedApplication] statusBarFrame].size.height
 #define kNavBarHeight 44.0
-#define KTopHeight kStatusBarHeight + kNavBarHeight
+#define KTopHeight (kStatusBarHeight + kNavBarHeight)
 #define KTarbarHeight  (kDevice_Is_iPhoneX ? 83 : 49)
 #define KTabbarSafeBottomMargin  (kDevice_Is_iPhoneX ? 34 : 0)
 

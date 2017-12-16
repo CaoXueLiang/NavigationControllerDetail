@@ -8,6 +8,7 @@
 
 #import "MainListViewController.h"
 #import "NormalTableViewCell.h"
+#import "GradualChangeController.h"
 
 @interface MainListViewController ()<UITableViewDelegate,UITableViewDataSource>
 @property (nonatomic,strong) NSArray *dataArray;
@@ -21,6 +22,11 @@
     self.view.backgroundColor = [UIColor groupTableViewBackgroundColor];
     self.navigationItem.title = @"首页";
     [self.view addSubview:self.myTable];
+    if (@available(iOS 11.0, *)){
+        self.myTable.contentInsetAdjustmentBehavior = UIScrollViewContentInsetAdjustmentNever;
+    }else{
+        self.automaticallyAdjustsScrollViewInsets = NO;
+    }
 }
 
 #pragma mark - UITableView M
@@ -40,6 +46,10 @@
 
 - (void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath{
     [tableView deselectRowAtIndexPath:indexPath animated:YES];
+    if (indexPath.row == 0) {
+        GradualChangeController *controller = [[GradualChangeController alloc]init];
+        [self.navigationController pushViewController:controller animated:YES];
+    }
 }
 
 - (void)tableView:(UITableView *)tableView willDisplayCell:(UITableViewCell *)cell forRowAtIndexPath:(NSIndexPath *)indexPath{
@@ -54,14 +64,14 @@
 #pragma mark - Setter && Getter
 - (NSArray *)dataArray{
     if (!_dataArray) {
-        _dataArray = @[@"导航栏渐变"];
+        _dataArray = @[@"导航栏渐变",];
     }
     return _dataArray;
 }
 
 - (UITableView *)myTable{
     if (!_myTable) {
-        _myTable = [[UITableView alloc]initWithFrame:CGRectMake(0, 0, kScreenWidth, kScreenHeight - kNavBarHeight - KTabbarSafeBottomMargin) style:UITableViewStylePlain];
+        _myTable = [[UITableView alloc]initWithFrame:CGRectMake(0, 0, kScreenWidth, kScreenHeight - KTopHeight - KTabbarSafeBottomMargin) style:UITableViewStylePlain];
         [_myTable registerClass:[NormalTableViewCell class] forCellReuseIdentifier:@"NormalTableViewCell"];
         _myTable.backgroundColor = [UIColor groupTableViewBackgroundColor];
         _myTable.tableFooterView = [UIView new];
