@@ -8,14 +8,6 @@
 
 #import "CustomNavigationBarView.h"
 
-@interface CustomNavigationBarView()
-@property (nonatomic,strong) UIImageView *bgImageView;
-@property (nonatomic,strong) UIVisualEffectView *effectView;
-@property (nonatomic,strong) UIView *centerView;
-@property (nonatomic,strong) UILabel *titleLabel;
-@property (nonatomic,strong) UILabel *detailLabel;
-@end
-
 @implementation CustomNavigationBarView
 #pragma mark - Init Menthod
 - (instancetype)initWithFrame:(CGRect)frame{
@@ -46,9 +38,29 @@
     [_bgImageView addSubview:_effectView];
     
     NSString *titleStr = @"哈哈这是一个父标题";
-    NSString *detailStr = @"子标题";
-    UILabel *
-    _centerView = [UIView alloc]initWithFrame:CGRectMake(<#CGFloat x#>, <#CGFloat y#>, <#CGFloat width#>, <#CGFloat height#>)
+    NSString *detailStr = @"副标题";
+    CGSize titleSize = [titleStr sizeForFont:[UIFont systemFontOfSize:12] size:CGSizeMake(HUGE, HUGE) mode:NSLineBreakByWordWrapping];
+    CGSize detailSize = [detailStr sizeForFont:[UIFont systemFontOfSize:11] size:CGSizeMake(HUGE, HUGE) mode:NSLineBreakByWordWrapping];
+    CGFloat maxWidth = MAX(titleSize.width, detailSize.width);
+    
+    _titleLabel = [[UILabel alloc]init];
+    _titleLabel.font = [UIFont systemFontOfSize:12];
+    _titleLabel.textColor = [UIColor whiteColor];
+    _titleLabel.textAlignment = NSTextAlignmentCenter;
+    _titleLabel.frame = CGRectMake(0, 5, maxWidth, titleSize.height);
+    _titleLabel.text = titleStr;
+    
+    _detailLabel = [[UILabel alloc]init];
+    _detailLabel.font = [UIFont systemFontOfSize:11];
+    _detailLabel.textColor = [UIColor whiteColor];
+    _detailLabel.textAlignment = NSTextAlignmentCenter;
+    _detailLabel.frame = CGRectMake(0, titleSize.height + 5, maxWidth, detailSize.height);
+    _detailLabel.text = detailStr;
+    
+    _centerView = [[UIView alloc]initWithFrame:CGRectMake((kScreenWidth - maxWidth)/2.0, KTopHeight, maxWidth, 10 + titleSize.height + detailSize.height)];
+    [_centerView addSubview:_titleLabel];
+    [_centerView addSubview:_detailLabel];
+    [_bgImageView addSubview:_centerView];
 }
 
 @end
