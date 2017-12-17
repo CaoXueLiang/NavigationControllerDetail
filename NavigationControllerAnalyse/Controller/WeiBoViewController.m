@@ -1,28 +1,25 @@
 //
-//  MainListViewController.m
+//  WeiBoViewController.m
 //  NavigationControllerAnalyse
 //
-//  Created by 曹学亮 on 2017/12/15.
+//  Created by 曹学亮 on 2017/12/17.
 //  Copyright © 2017年 caoxueliang.cn. All rights reserved.
 //
 
-#import "MainListViewController.h"
-#import "NormalTableViewCell.h"
-#import "GradualChangeController.h"
 #import "WeiBoViewController.h"
+#import "NormalTableViewCell.h"
 
-@interface MainListViewController ()<UITableViewDelegate,UITableViewDataSource>
-@property (nonatomic,strong) NSArray *dataArray;
+@interface WeiBoViewController ()<UITableViewDelegate,UITableViewDataSource>
 @property (nonatomic,strong) UITableView *myTable;
 @end
 
-@implementation MainListViewController
+@implementation WeiBoViewController
 #pragma mark - Life Cycle
 - (void)viewDidLoad {
     [super viewDidLoad];
     self.view.backgroundColor = [UIColor groupTableViewBackgroundColor];
-    self.navigationItem.title = @"首页";
     [self.view addSubview:self.myTable];
+    [self setNavigation];
     if (@available(iOS 11.0, *)){
         self.myTable.contentInsetAdjustmentBehavior = UIScrollViewContentInsetAdjustmentNever;
     }else{
@@ -30,31 +27,29 @@
     }
 }
 
+- (void)setNavigation{
+    UIBarButtonItem *rightIterm = [[UIBarButtonItem alloc]initWithImage:[UIImage imageNamed:@"more"] style:UIBarButtonItemStylePlain target:self action:@selector(moreClicked)];
+    self.navigationItem.rightBarButtonItem = rightIterm;
+}
+
+#pragma mark - Event Response
+- (void)moreClicked{
+    
+}
+
 #pragma mark - UITableView M
 - (NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section{
-    return self.dataArray.count;
+    return 30;
 }
 
 - (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath{
     NormalTableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:@"NormalTableViewCell" forIndexPath:indexPath];
-    [cell setTitle:self.dataArray[indexPath.row]];
+    [cell setTitle:[NSString stringWithFormat:@"当前索引_%ld",indexPath.row]];
     return cell;
 }
 
 - (CGFloat)tableView:(UITableView *)tableView heightForRowAtIndexPath:(NSIndexPath *)indexPath{
     return [NormalTableViewCell cellHeight];
-}
-
-- (void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath{
-    [tableView deselectRowAtIndexPath:indexPath animated:YES];
-    if (indexPath.row == 0) {
-        GradualChangeController *controller = [[GradualChangeController alloc]init];
-        [self.navigationController pushViewController:controller animated:YES];
-        
-    }else if (indexPath.row == 1){
-        WeiBoViewController *controller = [[WeiBoViewController alloc]init];
-        [self.navigationController pushViewController:controller animated:YES];
-    }
 }
 
 - (void)tableView:(UITableView *)tableView willDisplayCell:(UITableViewCell *)cell forRowAtIndexPath:(NSIndexPath *)indexPath{
@@ -67,13 +62,6 @@
 }
 
 #pragma mark - Setter && Getter
-- (NSArray *)dataArray{
-    if (!_dataArray) {
-        _dataArray = @[@"自定义导航栏渐变",@"新浪微博个人中心"];
-    }
-    return _dataArray;
-}
-
 - (UITableView *)myTable{
     if (!_myTable) {
         _myTable = [[UITableView alloc]initWithFrame:CGRectMake(0, 0, kScreenWidth, kScreenHeight - KTopHeight - KTabbarSafeBottomMargin) style:UITableViewStylePlain];
@@ -85,5 +73,6 @@
     }
     return _myTable;
 }
+
 
 @end

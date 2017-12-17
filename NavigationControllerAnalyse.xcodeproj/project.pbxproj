@@ -17,6 +17,7 @@
 		C306251F1FE4076B00ADF1C4 /* MainListViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = C306251E1FE4076B00ADF1C4 /* MainListViewController.m */; };
 		C30625221FE4097600ADF1C4 /* BaseNavigationController.m in Sources */ = {isa = PBXBuildFile; fileRef = C30625211FE4097600ADF1C4 /* BaseNavigationController.m */; };
 		C30625261FE4138800ADF1C4 /* NormalTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = C30625251FE4138800ADF1C4 /* NormalTableViewCell.m */; };
+		C34037B21FE6851B00119BFB /* WeiBoViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = C34037B11FE6851B00119BFB /* WeiBoViewController.m */; };
 		CC0689C3DCECAA2A19E2A76B /* libPods-NavigationControllerAnalyse.a in Frameworks */ = {isa = PBXBuildFile; fileRef = BB62F8A1BCF3FF499908FF92 /* libPods-NavigationControllerAnalyse.a */; };
 /* End PBXBuildFile section */
 
@@ -44,6 +45,8 @@
 		C30625211FE4097600ADF1C4 /* BaseNavigationController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = BaseNavigationController.m; sourceTree = "<group>"; };
 		C30625241FE4138800ADF1C4 /* NormalTableViewCell.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = NormalTableViewCell.h; sourceTree = "<group>"; };
 		C30625251FE4138800ADF1C4 /* NormalTableViewCell.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = NormalTableViewCell.m; sourceTree = "<group>"; };
+		C34037B01FE6851B00119BFB /* WeiBoViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = WeiBoViewController.h; sourceTree = "<group>"; };
+		C34037B11FE6851B00119BFB /* WeiBoViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = WeiBoViewController.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -128,6 +131,8 @@
 				C306251E1FE4076B00ADF1C4 /* MainListViewController.m */,
 				589B521C1FE4FC5300277109 /* GradualChangeController.h */,
 				589B521D1FE4FC5300277109 /* GradualChangeController.m */,
+				C34037B01FE6851B00119BFB /* WeiBoViewController.h */,
+				C34037B11FE6851B00119BFB /* WeiBoViewController.m */,
 			);
 			path = Controller;
 			sourceTree = "<group>";
@@ -267,6 +272,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				C34037B21FE6851B00119BFB /* WeiBoViewController.m in Sources */,
 				C30625221FE4097600ADF1C4 /* BaseNavigationController.m in Sources */,
 				5872DC3D1FE3D57000040CC5 /* main.m in Sources */,
 				C306251F1FE4076B00ADF1C4 /* MainListViewController.m in Sources */,
