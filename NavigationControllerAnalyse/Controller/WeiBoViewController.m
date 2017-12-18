@@ -74,5 +74,4 @@
     return _myTable;
 }
 
-
 @end
