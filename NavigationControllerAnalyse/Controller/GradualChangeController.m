@@ -30,7 +30,7 @@ static CGFloat HEADERHEIGHT = 250;
     [self.view addSubview:self.navigationView];
     [self.view addSubview:self.leftButton];
     self.leftButton.frame = CGRectMake(0, kStatusBarHeight, 44, 44);
-    
+    self.fd_prefersNavigationBarHidden = YES;
     if (@available(iOS 11.0, *)){
         self.myTable.contentInsetAdjustmentBehavior = UIScrollViewContentInsetAdjustmentNever;
     }else{
@@ -38,14 +38,13 @@ static CGFloat HEADERHEIGHT = 250;
     }
 }
 
-- (void)viewWillAppear:(BOOL)animated{
-    [super viewWillAppear:animated];
-    [self.navigationController setNavigationBarHidden:YES];
-}
-
-- (void)viewWillDisappear:(BOOL)animated{
-    [super viewWillDisappear:animated];
-    [self.navigationController setNavigationBarHidden:NO];
+- (BOOL)gestureRecognizer:(UIGestureRecognizer *)gestureRecognizer shouldRecognizeSimultaneouslyWithGestureRecognizer:(UIGestureRecognizer *)otherGestureRecognizer {
+    if (self.myTable.contentOffset.x <= 0) {
+        if ([otherGestureRecognizer.delegate isKindOfClass:NSClassFromString(@"_FDFullscreenPopGestureRecognizerDelegate")]) {
+            return YES;
+        }
+    }
+    return NO;
 }
 
 #pragma mark - Event Response

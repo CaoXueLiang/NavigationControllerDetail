@@ -20,6 +20,7 @@
     self.window = [[UIWindow alloc]initWithFrame:[UIScreen mainScreen].bounds];
     MainListViewController *controller = [[MainListViewController alloc]init];
     self.window.rootViewController = [[BaseNavigationController alloc]initWithRootViewController:controller];
+    self.window.backgroundColor = [UIColor whiteColor];
     [self.window makeKeyAndVisible];
     
     //设置导航栏
@@ -38,7 +39,7 @@
     //返回按钮的箭头颜色
     [navigationBarAppearance setTintColor:[UIColor whiteColor]];
     NSDictionary *textAttributes = @{
-                                     NSFontAttributeName: [UIFont systemFontOfSize:20],
+                                     NSFontAttributeName: [UIFont systemFontOfSize:18],
                                      NSForegroundColorAttributeName: [UIColor whiteColor],
                                      };
     [navigationBarAppearance setTitleTextAttributes:textAttributes];

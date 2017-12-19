@@ -82,6 +82,9 @@
         _myTable.tableFooterView = [UIView new];
         _myTable.delegate = self;
         _myTable.dataSource = self;
+        _myTable.estimatedRowHeight = 0;
+        _myTable.estimatedSectionFooterHeight = 0;
+        _myTable.estimatedSectionHeaderHeight = 0;
     }
     return _myTable;
 }

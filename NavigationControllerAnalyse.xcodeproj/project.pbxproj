@@ -11,6 +11,10 @@
 		5872DC371FE3D57000040CC5 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 5872DC361FE3D57000040CC5 /* Assets.xcassets */; };
 		5872DC3A1FE3D57000040CC5 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 5872DC381FE3D57000040CC5 /* LaunchScreen.storyboard */; };
 		5872DC3D1FE3D57000040CC5 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 5872DC3C1FE3D57000040CC5 /* main.m */; };
+		587CA5581FE8A743009A3B31 /* WeiBoHeaderView.m in Sources */ = {isa = PBXBuildFile; fileRef = 587CA5571FE8A743009A3B31 /* WeiBoHeaderView.m */; };
+		587CA55B1FE8B5E1009A3B31 /* UINavigationBar+Simple.m in Sources */ = {isa = PBXBuildFile; fileRef = 587CA55A1FE8B5E1009A3B31 /* UINavigationBar+Simple.m */; };
+		587CA55E1FE90B57009A3B31 /* WeiBoCustomNavigationView.m in Sources */ = {isa = PBXBuildFile; fileRef = 587CA55D1FE90B57009A3B31 /* WeiBoCustomNavigationView.m */; };
+		587CA5611FE9178B009A3B31 /* UIButton+Aliment.m in Sources */ = {isa = PBXBuildFile; fileRef = 587CA55F1FE9178A009A3B31 /* UIButton+Aliment.m */; };
 		589B521E1FE4FC5300277109 /* GradualChangeController.m in Sources */ = {isa = PBXBuildFile; fileRef = 589B521D1FE4FC5300277109 /* GradualChangeController.m */; };
 		589B52221FE516F900277109 /* UIScrollView+APParallaxHeader.m in Sources */ = {isa = PBXBuildFile; fileRef = 589B52201FE516F900277109 /* UIScrollView+APParallaxHeader.m */; };
 		589B52251FE5185300277109 /* CustomNavigationBarView.m in Sources */ = {isa = PBXBuildFile; fileRef = 589B52241FE5185300277109 /* CustomNavigationBarView.m */; };
@@ -30,6 +34,14 @@
 		5872DC391FE3D57000040CC5 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		5872DC3B1FE3D57000040CC5 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		5872DC3C1FE3D57000040CC5 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		587CA5561FE8A743009A3B31 /* WeiBoHeaderView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = WeiBoHeaderView.h; sourceTree = "<group>"; };
+		587CA5571FE8A743009A3B31 /* WeiBoHeaderView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = WeiBoHeaderView.m; sourceTree = "<group>"; };
+		587CA5591FE8B5E1009A3B31 /* UINavigationBar+Simple.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "UINavigationBar+Simple.h"; sourceTree = "<group>"; };
+		587CA55A1FE8B5E1009A3B31 /* UINavigationBar+Simple.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "UINavigationBar+Simple.m"; sourceTree = "<group>"; };
+		587CA55C1FE90B57009A3B31 /* WeiBoCustomNavigationView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = WeiBoCustomNavigationView.h; sourceTree = "<group>"; };
+		587CA55D1FE90B57009A3B31 /* WeiBoCustomNavigationView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = WeiBoCustomNavigationView.m; sourceTree = "<group>"; };
+		587CA55F1FE9178A009A3B31 /* UIButton+Aliment.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "UIButton+Aliment.m"; sourceTree = "<group>"; };
+		587CA5601FE9178A009A3B31 /* UIButton+Aliment.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "UIButton+Aliment.h"; sourceTree = "<group>"; };
 		589B521C1FE4FC5300277109 /* GradualChangeController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = GradualChangeController.h; sourceTree = "<group>"; };
 		589B521D1FE4FC5300277109 /* GradualChangeController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = GradualChangeController.m; sourceTree = "<group>"; };
 		589B52201FE516F900277109 /* UIScrollView+APParallaxHeader.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIScrollView+APParallaxHeader.m"; sourceTree = "<group>"; };
@@ -108,8 +120,12 @@
 		589B521F1FE516E200277109 /* Common */ = {
 			isa = PBXGroup;
 			children = (
+				587CA5601FE9178A009A3B31 /* UIButton+Aliment.h */,
+				587CA55F1FE9178A009A3B31 /* UIButton+Aliment.m */,
 				589B52211FE516F900277109 /* UIScrollView+APParallaxHeader.h */,
 				589B52201FE516F900277109 /* UIScrollView+APParallaxHeader.m */,
+				587CA5591FE8B5E1009A3B31 /* UINavigationBar+Simple.h */,
+				587CA55A1FE8B5E1009A3B31 /* UINavigationBar+Simple.m */,
 			);
 			path = Common;
 			sourceTree = "<group>";
@@ -144,6 +160,10 @@
 				C30625251FE4138800ADF1C4 /* NormalTableViewCell.m */,
 				589B52231FE5185300277109 /* CustomNavigationBarView.h */,
 				589B52241FE5185300277109 /* CustomNavigationBarView.m */,
+				587CA5561FE8A743009A3B31 /* WeiBoHeaderView.h */,
+				587CA5571FE8A743009A3B31 /* WeiBoHeaderView.m */,
+				587CA55C1FE90B57009A3B31 /* WeiBoCustomNavigationView.h */,
+				587CA55D1FE90B57009A3B31 /* WeiBoCustomNavigationView.m */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -272,14 +292,18 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				587CA55B1FE8B5E1009A3B31 /* UINavigationBar+Simple.m in Sources */,
 				C34037B21FE6851B00119BFB /* WeiBoViewController.m in Sources */,
 				C30625221FE4097600ADF1C4 /* BaseNavigationController.m in Sources */,
+				587CA5581FE8A743009A3B31 /* WeiBoHeaderView.m in Sources */,
 				5872DC3D1FE3D57000040CC5 /* main.m in Sources */,
 				C306251F1FE4076B00ADF1C4 /* MainListViewController.m in Sources */,
 				5872DC2F1FE3D57000040CC5 /* AppDelegate.m in Sources */,
+				587CA5611FE9178B009A3B31 /* UIButton+Aliment.m in Sources */,
 				589B52221FE516F900277109 /* UIScrollView+APParallaxHeader.m in Sources */,
 				589B521E1FE4FC5300277109 /* GradualChangeController.m in Sources */,
 				C30625261FE4138800ADF1C4 /* NormalTableViewCell.m in Sources */,
+				587CA55E1FE90B57009A3B31 /* WeiBoCustomNavigationView.m in Sources */,
 				589B52251FE5185300277109 /* CustomNavigationBarView.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

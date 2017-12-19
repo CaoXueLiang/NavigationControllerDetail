@@ -11,6 +11,8 @@
 
 #import <YYCategories/YYCategories.h>
 #import <Masonry/Masonry.h>
+#import "UINavigationBar+Simple.h"
+#import <FDFullscreenPopGesture/UINavigationController+FDFullscreenPopGesture.h>
 
 #define kStatusBarHeight [[UIApplication sharedApplication] statusBarFrame].size.height
 #define kNavBarHeight 44.0
