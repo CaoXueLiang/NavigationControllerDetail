@@ -69,7 +69,7 @@
 #pragma mark - Setter && Getter
 - (NSArray *)dataArray{
     if (!_dataArray) {
-        _dataArray = @[@"自定义导航栏渐变",@"新浪微博个人中心"];
+        _dataArray = @[@"文字移动导航栏渐变",@"新浪微博个人中心"];
     }
     return _dataArray;
 }
