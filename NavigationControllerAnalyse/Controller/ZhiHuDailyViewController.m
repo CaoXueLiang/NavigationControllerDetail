@@ -112,9 +112,7 @@ static CGFloat MaxDropDownHeight = 100;
     if (offsetY < -CAROUSELHEIGHT) {
         self.carouselView.frame = CGRectMake(0, offsetY, kScreenWidth, fabs(offsetY));
     }
-    
-    NSLog(@"%f",offsetY);
-    
+
     if (offsetY + CAROUSELHEIGHT < CAROUSELHEIGHT) {
         self.myTable.contentInset = UIEdgeInsetsMake(CAROUSELHEIGHT, 0, 0, 0);
     }else{
@@ -128,7 +126,6 @@ static CGFloat MaxDropDownHeight = 100;
     }else{
         [self.navigationView setTitle:@"知乎日报"];
     }
-    
 }
 
 #pragma mark - CarouselScrollViewDelegate
