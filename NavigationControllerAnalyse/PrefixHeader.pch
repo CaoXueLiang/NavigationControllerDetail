@@ -13,6 +13,7 @@
 #import <Masonry/Masonry.h>
 #import "UINavigationBar+Simple.h"
 #import <FDFullscreenPopGesture/UINavigationController+FDFullscreenPopGesture.h>
+#import <SDCycleScrollView/SDCycleScrollView.h>
 
 #define kStatusBarHeight [[UIApplication sharedApplication] statusBarFrame].size.height
 #define kNavBarHeight 44.0

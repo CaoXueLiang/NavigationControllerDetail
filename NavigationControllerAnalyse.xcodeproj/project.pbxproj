@@ -7,6 +7,11 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		5840836F1FEA02F5005044CC /* QzoneViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 5840836E1FEA02F5005044CC /* QzoneViewController.m */; };
+		584083721FEA1080005044CC /* QQCustomNavigationView.m in Sources */ = {isa = PBXBuildFile; fileRef = 584083711FEA1080005044CC /* QQCustomNavigationView.m */; };
+		584083751FEA3F2B005044CC /* ZhiHuCustomNavigationView.m in Sources */ = {isa = PBXBuildFile; fileRef = 584083741FEA3F2B005044CC /* ZhiHuCustomNavigationView.m */; };
+		584083781FEA497D005044CC /* ZhiHuDailyViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 584083771FEA497D005044CC /* ZhiHuDailyViewController.m */; };
+		584083821FEA6348005044CC /* ZhiHuHeaderView.m in Sources */ = {isa = PBXBuildFile; fileRef = 584083811FEA6348005044CC /* ZhiHuHeaderView.m */; };
 		5872DC2F1FE3D57000040CC5 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 5872DC2E1FE3D57000040CC5 /* AppDelegate.m */; };
 		5872DC371FE3D57000040CC5 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 5872DC361FE3D57000040CC5 /* Assets.xcassets */; };
 		5872DC3A1FE3D57000040CC5 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 5872DC381FE3D57000040CC5 /* LaunchScreen.storyboard */; };
@@ -27,6 +32,16 @@
 
 /* Begin PBXFileReference section */
 		0C9768ACBC8AE8426AEBDC94 /* Pods-NavigationControllerAnalyse.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-NavigationControllerAnalyse.release.xcconfig"; path = "Pods/Target Support Files/Pods-NavigationControllerAnalyse/Pods-NavigationControllerAnalyse.release.xcconfig"; sourceTree = "<group>"; };
+		5840836D1FEA02F5005044CC /* QzoneViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = QzoneViewController.h; sourceTree = "<group>"; };
+		5840836E1FEA02F5005044CC /* QzoneViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = QzoneViewController.m; sourceTree = "<group>"; };
+		584083701FEA1080005044CC /* QQCustomNavigationView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = QQCustomNavigationView.h; sourceTree = "<group>"; };
+		584083711FEA1080005044CC /* QQCustomNavigationView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = QQCustomNavigationView.m; sourceTree = "<group>"; };
+		584083731FEA3F2B005044CC /* ZhiHuCustomNavigationView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ZhiHuCustomNavigationView.h; sourceTree = "<group>"; };
+		584083741FEA3F2B005044CC /* ZhiHuCustomNavigationView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ZhiHuCustomNavigationView.m; sourceTree = "<group>"; };
+		584083761FEA497D005044CC /* ZhiHuDailyViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ZhiHuDailyViewController.h; sourceTree = "<group>"; };
+		584083771FEA497D005044CC /* ZhiHuDailyViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ZhiHuDailyViewController.m; sourceTree = "<group>"; };
+		584083801FEA6348005044CC /* ZhiHuHeaderView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ZhiHuHeaderView.h; sourceTree = "<group>"; };
+		584083811FEA6348005044CC /* ZhiHuHeaderView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ZhiHuHeaderView.m; sourceTree = "<group>"; };
 		5872DC2A1FE3D57000040CC5 /* NavigationControllerAnalyse.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = NavigationControllerAnalyse.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		5872DC2D1FE3D57000040CC5 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		5872DC2E1FE3D57000040CC5 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
@@ -149,6 +164,10 @@
 				589B521D1FE4FC5300277109 /* GradualChangeController.m */,
 				C34037B01FE6851B00119BFB /* WeiBoViewController.h */,
 				C34037B11FE6851B00119BFB /* WeiBoViewController.m */,
+				5840836D1FEA02F5005044CC /* QzoneViewController.h */,
+				5840836E1FEA02F5005044CC /* QzoneViewController.m */,
+				584083761FEA497D005044CC /* ZhiHuDailyViewController.h */,
+				584083771FEA497D005044CC /* ZhiHuDailyViewController.m */,
 			);
 			path = Controller;
 			sourceTree = "<group>";
@@ -164,6 +183,12 @@
 				587CA5571FE8A743009A3B31 /* WeiBoHeaderView.m */,
 				587CA55C1FE90B57009A3B31 /* WeiBoCustomNavigationView.h */,
 				587CA55D1FE90B57009A3B31 /* WeiBoCustomNavigationView.m */,
+				584083701FEA1080005044CC /* QQCustomNavigationView.h */,
+				584083711FEA1080005044CC /* QQCustomNavigationView.m */,
+				584083731FEA3F2B005044CC /* ZhiHuCustomNavigationView.h */,
+				584083741FEA3F2B005044CC /* ZhiHuCustomNavigationView.m */,
+				584083801FEA6348005044CC /* ZhiHuHeaderView.h */,
+				584083811FEA6348005044CC /* ZhiHuHeaderView.m */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -292,17 +317,22 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				584083781FEA497D005044CC /* ZhiHuDailyViewController.m in Sources */,
 				587CA55B1FE8B5E1009A3B31 /* UINavigationBar+Simple.m in Sources */,
 				C34037B21FE6851B00119BFB /* WeiBoViewController.m in Sources */,
 				C30625221FE4097600ADF1C4 /* BaseNavigationController.m in Sources */,
 				587CA5581FE8A743009A3B31 /* WeiBoHeaderView.m in Sources */,
+				584083751FEA3F2B005044CC /* ZhiHuCustomNavigationView.m in Sources */,
 				5872DC3D1FE3D57000040CC5 /* main.m in Sources */,
 				C306251F1FE4076B00ADF1C4 /* MainListViewController.m in Sources */,
+				584083821FEA6348005044CC /* ZhiHuHeaderView.m in Sources */,
 				5872DC2F1FE3D57000040CC5 /* AppDelegate.m in Sources */,
 				587CA5611FE9178B009A3B31 /* UIButton+Aliment.m in Sources */,
 				589B52221FE516F900277109 /* UIScrollView+APParallaxHeader.m in Sources */,
 				589B521E1FE4FC5300277109 /* GradualChangeController.m in Sources */,
+				5840836F1FEA02F5005044CC /* QzoneViewController.m in Sources */,
 				C30625261FE4138800ADF1C4 /* NormalTableViewCell.m in Sources */,
+				584083721FEA1080005044CC /* QQCustomNavigationView.m in Sources */,
 				587CA55E1FE90B57009A3B31 /* WeiBoCustomNavigationView.m in Sources */,
 				589B52251FE5185300277109 /* CustomNavigationBarView.m in Sources */,
 			);

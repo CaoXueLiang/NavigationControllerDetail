@@ -87,6 +87,8 @@
     }else{
         self.barStyle = UIStatusBarStyleDefault;
     }
+    
+    //更新状态栏颜色
     [self setNeedsStatusBarAppearanceUpdate];
     
     NSLog(@"%f",offsetY);

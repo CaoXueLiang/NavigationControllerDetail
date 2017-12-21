@@ -10,6 +10,8 @@
 #import "NormalTableViewCell.h"
 #import "GradualChangeController.h"
 #import "WeiBoViewController.h"
+#import "QzoneViewController.h"
+#import "ZhiHuDailyViewController.h"
 
 @interface MainListViewController ()<UITableViewDelegate,UITableViewDataSource>
 @property (nonatomic,strong) NSArray *dataArray;
@@ -50,9 +52,14 @@
     if (indexPath.row == 0) {
         GradualChangeController *controller = [[GradualChangeController alloc]init];
         [self.navigationController pushViewController:controller animated:YES];
-        
     }else if (indexPath.row == 1){
         WeiBoViewController *controller = [[WeiBoViewController alloc]init];
+        [self.navigationController pushViewController:controller animated:YES];
+    }else if (indexPath.row == 2){
+        QzoneViewController *controller = [[QzoneViewController alloc]init];
+        [self.navigationController pushViewController:controller animated:YES];
+    }else if (indexPath.row == 3){
+        ZhiHuDailyViewController *controller = [[ZhiHuDailyViewController alloc]init];
         [self.navigationController pushViewController:controller animated:YES];
     }
 }
@@ -69,7 +76,7 @@
 #pragma mark - Setter && Getter
 - (NSArray *)dataArray{
     if (!_dataArray) {
-        _dataArray = @[@"文字移动导航栏渐变",@"新浪微博个人中心"];
+        _dataArray = @[@"文字移动导航栏渐变",@"新浪微博个人中心",@"QQ空间效果",@"仿知乎日报"];
     }
     return _dataArray;
 }

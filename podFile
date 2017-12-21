@@ -4,4 +4,5 @@ target 'NavigationControllerAnalyse' do
   pod 'YYCategories'
   pod 'Masonry'
   pod 'FDFullscreenPopGesture'
+  pod 'SDCycleScrollView'
 end

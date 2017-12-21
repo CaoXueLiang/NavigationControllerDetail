@@ -8,6 +8,9 @@
 
 #import <UIKit/UIKit.h>
 
+/**
+ 微博自定义导航栏
+ */
 @interface WeiBoCustomNavigationView : UIView
 @property (nonatomic,copy) void(^backBlock)(void);
 @property (nonatomic,copy) void(^moreBlock)(void);
