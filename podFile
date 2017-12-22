@@ -5,4 +5,5 @@ target 'NavigationControllerAnalyse' do
   pod 'Masonry'
   pod 'FDFullscreenPopGesture'
   pod 'SDCycleScrollView'
+  pod 'UICollectionViewLeftAlignedLayout'
 end

@@ -14,7 +14,7 @@
             buildForArchiving = "YES">
             <BuildableReference
                BuildableIdentifier = 'primary'
-               BlueprintIdentifier = '01D993A20533620A5AC810FC4235C3B1'
+               BlueprintIdentifier = '00BBE1CB4F3E8B64C032AAE6DE774B8B'
                BlueprintName = 'Pods-NavigationControllerAnalyse'
                ReferencedContainer = 'container:Pods.xcodeproj'
                BuildableName = 'libPods-NavigationControllerAnalyse.a'>

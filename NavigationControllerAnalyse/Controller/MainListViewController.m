@@ -12,6 +12,7 @@
 #import "WeiBoViewController.h"
 #import "QzoneViewController.h"
 #import "ZhiHuDailyViewController.h"
+#import "ZhiHuSearchController.h"
 
 @interface MainListViewController ()<UITableViewDelegate,UITableViewDataSource>
 @property (nonatomic,strong) NSArray *dataArray;
@@ -61,6 +62,9 @@
     }else if (indexPath.row == 3){
         ZhiHuDailyViewController *controller = [[ZhiHuDailyViewController alloc]init];
         [self.navigationController pushViewController:controller animated:YES];
+    }else if (indexPath.row == 4){
+        ZhiHuSearchController *controller = [[ZhiHuSearchController alloc]init];
+        [self.navigationController pushViewController:controller animated:YES];
     }
 }
 
@@ -76,7 +80,7 @@
 #pragma mark - Setter && Getter
 - (NSArray *)dataArray{
     if (!_dataArray) {
-        _dataArray = @[@"文字移动导航栏渐变",@"新浪微博个人中心",@"QQ空间效果",@"仿知乎日报"];
+        _dataArray = @[@"文字移动导航栏渐变",@"新浪微博个人中心",@"QQ空间效果",@"仿知乎日报",@"知乎搜索导航栏"];
     }
     return _dataArray;
 }
