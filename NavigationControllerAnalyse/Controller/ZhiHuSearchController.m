@@ -40,7 +40,7 @@
     [rightButton setImage:[UIImage imageNamed:@"button_newpost_highlight"] forState:UIControlStateHighlighted];
     [rightButton setTitle:@"提问" forState:UIControlStateNormal];
     [rightButton setTitleColor:[UIColor colorWithRed:12/255.0 green:107/255.0 blue:254/255.0 alpha:1] forState:UIControlStateNormal];
-    [rightButton layoutImageTitleHorizontalOffSet:12];
+    [rightButton layoutImageTitleHorizontalOffSet:1];
     [rightButton addTarget:self action:@selector(askQuestion) forControlEvents:UIControlEventTouchUpInside];
     self.navigationItem.rightBarButtonItem = [[UIBarButtonItem alloc]initWithCustomView:rightButton];
     
@@ -59,7 +59,7 @@
     [titleButton layoutImageTitleHorizontalOffSet:5];
     titleButton.layer.cornerRadius = 5;
     titleButton.layer.masksToBounds = YES;
-    titleButton.frame = CGRectMake(0, 0, kScreenWidth - 90, 30);
+    titleButton.frame = CGRectMake(0, 0, kScreenWidth - 100, 30);
     self.navigationItem.titleView = titleButton;
 }
 

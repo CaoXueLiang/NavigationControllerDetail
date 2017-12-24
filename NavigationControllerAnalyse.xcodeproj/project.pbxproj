@@ -11,7 +11,6 @@
 		584083721FEA1080005044CC /* QQCustomNavigationView.m in Sources */ = {isa = PBXBuildFile; fileRef = 584083711FEA1080005044CC /* QQCustomNavigationView.m */; };
 		584083751FEA3F2B005044CC /* ZhiHuCustomNavigationView.m in Sources */ = {isa = PBXBuildFile; fileRef = 584083741FEA3F2B005044CC /* ZhiHuCustomNavigationView.m */; };
 		584083781FEA497D005044CC /* ZhiHuDailyViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 584083771FEA497D005044CC /* ZhiHuDailyViewController.m */; };
-		584083821FEA6348005044CC /* ZhiHuHeaderView.m in Sources */ = {isa = PBXBuildFile; fileRef = 584083811FEA6348005044CC /* ZhiHuHeaderView.m */; };
 		5872DC2F1FE3D57000040CC5 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 5872DC2E1FE3D57000040CC5 /* AppDelegate.m */; };
 		5872DC371FE3D57000040CC5 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 5872DC361FE3D57000040CC5 /* Assets.xcassets */; };
 		5872DC3A1FE3D57000040CC5 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 5872DC381FE3D57000040CC5 /* LaunchScreen.storyboard */; };
@@ -29,12 +28,16 @@
 		58A129301FECDF6F004CB1A8 /* ZhiHuSearchResultViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 58A1292F1FECDF6F004CB1A8 /* ZhiHuSearchResultViewController.m */; };
 		58A129331FED0605004CB1A8 /* ZhiHuNormalTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 58A129321FED0605004CB1A8 /* ZhiHuNormalTableViewCell.m */; };
 		58A129361FED0B99004CB1A8 /* ZhiHuSearchView.m in Sources */ = {isa = PBXBuildFile; fileRef = 58A129351FED0B99004CB1A8 /* ZhiHuSearchView.m */; };
-		58A129391FED0C7F004CB1A8 /* ZhiHuHotTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 58A129381FED0C7F004CB1A8 /* ZhiHuHotTableViewCell.m */; };
 		58A1293C1FED10C6004CB1A8 /* ZhiHuCollectionViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 58A1293B1FED10C6004CB1A8 /* ZhiHuCollectionViewCell.m */; };
+		C303E8661FEEAFAE0058FFB1 /* ZhiHuHotModel.m in Sources */ = {isa = PBXBuildFile; fileRef = C303E8651FEEAFAE0058FFB1 /* ZhiHuHotModel.m */; };
 		C306251F1FE4076B00ADF1C4 /* MainListViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = C306251E1FE4076B00ADF1C4 /* MainListViewController.m */; };
 		C30625221FE4097600ADF1C4 /* BaseNavigationController.m in Sources */ = {isa = PBXBuildFile; fileRef = C30625211FE4097600ADF1C4 /* BaseNavigationController.m */; };
 		C30625261FE4138800ADF1C4 /* NormalTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = C30625251FE4138800ADF1C4 /* NormalTableViewCell.m */; };
 		C34037B21FE6851B00119BFB /* WeiBoViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = C34037B11FE6851B00119BFB /* WeiBoViewController.m */; };
+		C3CC55B21FEF60C300AD05F2 /* ZHiHuSeaarchHeaderView.m in Sources */ = {isa = PBXBuildFile; fileRef = C3CC55B11FEF60C300AD05F2 /* ZHiHuSeaarchHeaderView.m */; };
+		C3CC55B51FEF9B4E00AD05F2 /* ZhiHuHeaderView.m in Sources */ = {isa = PBXBuildFile; fileRef = C3CC55B41FEF9B4E00AD05F2 /* ZhiHuHeaderView.m */; };
+		C3CC55B81FEFB7DC00AD05F2 /* UICollectionViewLeftAlignedLayout.m in Sources */ = {isa = PBXBuildFile; fileRef = C3CC55B61FEFB7DC00AD05F2 /* UICollectionViewLeftAlignedLayout.m */; };
+		C3CC55BB1FEFED1B00AD05F2 /* ZhiHuSearchFootView.m in Sources */ = {isa = PBXBuildFile; fileRef = C3CC55BA1FEFED1B00AD05F2 /* ZhiHuSearchFootView.m */; };
 		CC0689C3DCECAA2A19E2A76B /* libPods-NavigationControllerAnalyse.a in Frameworks */ = {isa = PBXBuildFile; fileRef = BB62F8A1BCF3FF499908FF92 /* libPods-NavigationControllerAnalyse.a */; };
 /* End PBXBuildFile section */
 
@@ -48,8 +51,6 @@
 		584083741FEA3F2B005044CC /* ZhiHuCustomNavigationView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ZhiHuCustomNavigationView.m; sourceTree = "<group>"; };
 		584083761FEA497D005044CC /* ZhiHuDailyViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ZhiHuDailyViewController.h; sourceTree = "<group>"; };
 		584083771FEA497D005044CC /* ZhiHuDailyViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ZhiHuDailyViewController.m; sourceTree = "<group>"; };
-		584083801FEA6348005044CC /* ZhiHuHeaderView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ZhiHuHeaderView.h; sourceTree = "<group>"; };
-		584083811FEA6348005044CC /* ZhiHuHeaderView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ZhiHuHeaderView.m; sourceTree = "<group>"; };
 		5872DC2A1FE3D57000040CC5 /* NavigationControllerAnalyse.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = NavigationControllerAnalyse.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		5872DC2D1FE3D57000040CC5 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		5872DC2E1FE3D57000040CC5 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
@@ -83,12 +84,12 @@
 		58A129321FED0605004CB1A8 /* ZhiHuNormalTableViewCell.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ZhiHuNormalTableViewCell.m; sourceTree = "<group>"; };
 		58A129341FED0B99004CB1A8 /* ZhiHuSearchView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ZhiHuSearchView.h; sourceTree = "<group>"; };
 		58A129351FED0B99004CB1A8 /* ZhiHuSearchView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ZhiHuSearchView.m; sourceTree = "<group>"; };
-		58A129371FED0C7F004CB1A8 /* ZhiHuHotTableViewCell.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ZhiHuHotTableViewCell.h; sourceTree = "<group>"; };
-		58A129381FED0C7F004CB1A8 /* ZhiHuHotTableViewCell.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ZhiHuHotTableViewCell.m; sourceTree = "<group>"; };
 		58A1293A1FED10C6004CB1A8 /* ZhiHuCollectionViewCell.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ZhiHuCollectionViewCell.h; sourceTree = "<group>"; };
 		58A1293B1FED10C6004CB1A8 /* ZhiHuCollectionViewCell.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ZhiHuCollectionViewCell.m; sourceTree = "<group>"; };
 		9299628B9ADBF54053B28676 /* Pods-NavigationControllerAnalyse.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-NavigationControllerAnalyse.debug.xcconfig"; path = "Pods/Target Support Files/Pods-NavigationControllerAnalyse/Pods-NavigationControllerAnalyse.debug.xcconfig"; sourceTree = "<group>"; };
 		BB62F8A1BCF3FF499908FF92 /* libPods-NavigationControllerAnalyse.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-NavigationControllerAnalyse.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		C303E8641FEEAFAE0058FFB1 /* ZhiHuHotModel.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ZhiHuHotModel.h; sourceTree = "<group>"; };
+		C303E8651FEEAFAE0058FFB1 /* ZhiHuHotModel.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ZhiHuHotModel.m; sourceTree = "<group>"; };
 		C306251B1FE4057100ADF1C4 /* PrefixHeader.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = PrefixHeader.pch; sourceTree = "<group>"; };
 		C306251D1FE4076B00ADF1C4 /* MainListViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MainListViewController.h; sourceTree = "<group>"; };
 		C306251E1FE4076B00ADF1C4 /* MainListViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MainListViewController.m; sourceTree = "<group>"; };
@@ -98,6 +99,14 @@
 		C30625251FE4138800ADF1C4 /* NormalTableViewCell.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = NormalTableViewCell.m; sourceTree = "<group>"; };
 		C34037B01FE6851B00119BFB /* WeiBoViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = WeiBoViewController.h; sourceTree = "<group>"; };
 		C34037B11FE6851B00119BFB /* WeiBoViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = WeiBoViewController.m; sourceTree = "<group>"; };
+		C3CC55B01FEF60C300AD05F2 /* ZHiHuSeaarchHeaderView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ZHiHuSeaarchHeaderView.h; sourceTree = "<group>"; };
+		C3CC55B11FEF60C300AD05F2 /* ZHiHuSeaarchHeaderView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ZHiHuSeaarchHeaderView.m; sourceTree = "<group>"; };
+		C3CC55B31FEF9B4E00AD05F2 /* ZhiHuHeaderView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ZhiHuHeaderView.h; sourceTree = "<group>"; };
+		C3CC55B41FEF9B4E00AD05F2 /* ZhiHuHeaderView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ZhiHuHeaderView.m; sourceTree = "<group>"; };
+		C3CC55B61FEFB7DC00AD05F2 /* UICollectionViewLeftAlignedLayout.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = UICollectionViewLeftAlignedLayout.m; sourceTree = "<group>"; };
+		C3CC55B71FEFB7DC00AD05F2 /* UICollectionViewLeftAlignedLayout.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = UICollectionViewLeftAlignedLayout.h; sourceTree = "<group>"; };
+		C3CC55B91FEFED1B00AD05F2 /* ZhiHuSearchFootView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ZhiHuSearchFootView.h; sourceTree = "<group>"; };
+		C3CC55BA1FEFED1B00AD05F2 /* ZhiHuSearchFootView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ZhiHuSearchFootView.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -142,6 +151,7 @@
 		5872DC2C1FE3D57000040CC5 /* NavigationControllerAnalyse */ = {
 			isa = PBXGroup;
 			children = (
+				C303E8631FEEAF890058FFB1 /* Model */,
 				589B521F1FE516E200277109 /* Common */,
 				C30625231FE4137400ADF1C4 /* View */,
 				C306251C1FE4074C00ADF1C4 /* Controller */,
@@ -159,6 +169,8 @@
 		589B521F1FE516E200277109 /* Common */ = {
 			isa = PBXGroup;
 			children = (
+				C3CC55B71FEFB7DC00AD05F2 /* UICollectionViewLeftAlignedLayout.h */,
+				C3CC55B61FEFB7DC00AD05F2 /* UICollectionViewLeftAlignedLayout.m */,
 				587CA5601FE9178A009A3B31 /* UIButton+Aliment.h */,
 				587CA55F1FE9178A009A3B31 /* UIButton+Aliment.m */,
 				589B52211FE516F900277109 /* UIScrollView+APParallaxHeader.h */,
@@ -175,6 +187,15 @@
 				BB62F8A1BCF3FF499908FF92 /* libPods-NavigationControllerAnalyse.a */,
 			);
 			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		C303E8631FEEAF890058FFB1 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				C303E8641FEEAFAE0058FFB1 /* ZhiHuHotModel.h */,
+				C303E8651FEEAFAE0058FFB1 /* ZhiHuHotModel.m */,
+			);
+			path = Model;
 			sourceTree = "<group>";
 		};
 		C306251C1FE4074C00ADF1C4 /* Controller */ = {
@@ -215,18 +236,20 @@
 				584083711FEA1080005044CC /* QQCustomNavigationView.m */,
 				584083731FEA3F2B005044CC /* ZhiHuCustomNavigationView.h */,
 				584083741FEA3F2B005044CC /* ZhiHuCustomNavigationView.m */,
-				584083801FEA6348005044CC /* ZhiHuHeaderView.h */,
-				584083811FEA6348005044CC /* ZhiHuHeaderView.m */,
 				58A129281FECA042004CB1A8 /* CustomSearchBar.h */,
 				58A129291FECA042004CB1A8 /* CustomSearchBar.m */,
 				58A1292B1FECD3EA004CB1A8 /* CustomSearchController.h */,
 				58A1292C1FECD3EA004CB1A8 /* CustomSearchController.m */,
 				58A129311FED0605004CB1A8 /* ZhiHuNormalTableViewCell.h */,
 				58A129321FED0605004CB1A8 /* ZhiHuNormalTableViewCell.m */,
-				58A129371FED0C7F004CB1A8 /* ZhiHuHotTableViewCell.h */,
-				58A129381FED0C7F004CB1A8 /* ZhiHuHotTableViewCell.m */,
 				58A1293A1FED10C6004CB1A8 /* ZhiHuCollectionViewCell.h */,
 				58A1293B1FED10C6004CB1A8 /* ZhiHuCollectionViewCell.m */,
+				C3CC55B01FEF60C300AD05F2 /* ZHiHuSeaarchHeaderView.h */,
+				C3CC55B11FEF60C300AD05F2 /* ZHiHuSeaarchHeaderView.m */,
+				C3CC55B91FEFED1B00AD05F2 /* ZhiHuSearchFootView.h */,
+				C3CC55BA1FEFED1B00AD05F2 /* ZhiHuSearchFootView.m */,
+				C3CC55B31FEF9B4E00AD05F2 /* ZhiHuHeaderView.h */,
+				C3CC55B41FEF9B4E00AD05F2 /* ZhiHuHeaderView.m */,
 				58A129341FED0B99004CB1A8 /* ZhiHuSearchView.h */,
 				58A129351FED0B99004CB1A8 /* ZhiHuSearchView.m */,
 			);
@@ -332,7 +355,7 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
-			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n";
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
 			showEnvVarsInLog = 0;
 		};
 		F667722275C0952400653D8F /* [CP] Embed Pods Frameworks */ = {
@@ -358,18 +381,20 @@
 			buildActionMask = 2147483647;
 			files = (
 				584083781FEA497D005044CC /* ZhiHuDailyViewController.m in Sources */,
+				C3CC55B21FEF60C300AD05F2 /* ZHiHuSeaarchHeaderView.m in Sources */,
+				C3CC55BB1FEFED1B00AD05F2 /* ZhiHuSearchFootView.m in Sources */,
 				587CA55B1FE8B5E1009A3B31 /* UINavigationBar+Simple.m in Sources */,
 				58A1292D1FECD3EA004CB1A8 /* CustomSearchController.m in Sources */,
 				58A1293C1FED10C6004CB1A8 /* ZhiHuCollectionViewCell.m in Sources */,
 				C34037B21FE6851B00119BFB /* WeiBoViewController.m in Sources */,
 				C30625221FE4097600ADF1C4 /* BaseNavigationController.m in Sources */,
+				C303E8661FEEAFAE0058FFB1 /* ZhiHuHotModel.m in Sources */,
 				58A129331FED0605004CB1A8 /* ZhiHuNormalTableViewCell.m in Sources */,
 				587CA5581FE8A743009A3B31 /* WeiBoHeaderView.m in Sources */,
-				58A129391FED0C7F004CB1A8 /* ZhiHuHotTableViewCell.m in Sources */,
 				584083751FEA3F2B005044CC /* ZhiHuCustomNavigationView.m in Sources */,
+				C3CC55B51FEF9B4E00AD05F2 /* ZhiHuHeaderView.m in Sources */,
 				5872DC3D1FE3D57000040CC5 /* main.m in Sources */,
 				C306251F1FE4076B00ADF1C4 /* MainListViewController.m in Sources */,
-				584083821FEA6348005044CC /* ZhiHuHeaderView.m in Sources */,
 				5872DC2F1FE3D57000040CC5 /* AppDelegate.m in Sources */,
 				587CA5611FE9178B009A3B31 /* UIButton+Aliment.m in Sources */,
 				58A129361FED0B99004CB1A8 /* ZhiHuSearchView.m in Sources */,
@@ -382,6 +407,7 @@
 				58A129301FECDF6F004CB1A8 /* ZhiHuSearchResultViewController.m in Sources */,
 				587CA55E1FE90B57009A3B31 /* WeiBoCustomNavigationView.m in Sources */,
 				58A1292A1FECA042004CB1A8 /* CustomSearchBar.m in Sources */,
+				C3CC55B81FEFB7DC00AD05F2 /* UICollectionViewLeftAlignedLayout.m in Sources */,
 				589B52251FE5185300277109 /* CustomNavigationBarView.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

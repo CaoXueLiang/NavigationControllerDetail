@@ -28,7 +28,7 @@
 - (void)addSubViews{
     [self.contentView addSubview:self.leftImageView];
     [self.leftImageView mas_makeConstraints:^(MASConstraintMaker *make) {
-        make.left.equalTo(self.contentView).offset(15);
+        make.left.equalTo(self.contentView).offset(12);
         make.centerY.equalTo(self.contentView);
         make.size.mas_equalTo(CGSizeMake(24, 24));
     }];
@@ -67,7 +67,7 @@
     if (!_tipLabel) {
         _tipLabel = [UILabel new];
         _tipLabel.font = [UIFont systemFontOfSize:12];
-        _tipLabel.textColor = [UIColor blackColor];
+        _tipLabel.textColor = RGBA(77, 77, 77, 1);
     }
     return _tipLabel;
 }

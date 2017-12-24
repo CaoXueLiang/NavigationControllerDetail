@@ -8,17 +8,20 @@
 
 #import "ZhiHuSearchResultViewController.h"
 #import "CustomSearchController.h"
+#import "ZhiHuSearchView.h"
 
 @interface ZhiHuSearchResultViewController ()<UISearchBarDelegate>
 @property (nonatomic,strong) CustomSearchController *searchController;
+@property (nonatomic,strong) ZhiHuSearchView *searchView;
 @end
 
 @implementation ZhiHuSearchResultViewController
 #pragma mark - Life Cycle
 - (void)viewDidLoad {
     [super viewDidLoad];
-    self.view.backgroundColor = [UIColor redColor];
+    self.view.backgroundColor = [UIColor whiteColor];
     [self setNavigation];
+    [self addSubViews];
 }
 
 - (void)setNavigation{
@@ -29,6 +32,10 @@
     self.searchController.customSearchBar.delegate = self;
     self.navigationItem.titleView = self.searchController.customSearchBar;
     self.navigationItem.hidesBackButton = YES;
+}
+
+- (void)addSubViews{
+    [self.view addSubview:self.searchView];
 }
 
 #pragma mark - UISearchBarDelegate
@@ -45,5 +52,11 @@
 }
 
 #pragma mark - Setter && Getter
+- (ZhiHuSearchView *)searchView{
+    if (!_searchView) {
+        _searchView = [[ZhiHuSearchView alloc]initWithFrame:CGRectMake(0, 0, kScreenWidth, kScreenHeight - KTopHeight - KTabbarSafeBottomMargin)];
+    }
+    return _searchView;
+}
 
 @end

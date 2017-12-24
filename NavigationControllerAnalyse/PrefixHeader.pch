@@ -14,6 +14,7 @@
 #import "UINavigationBar+Simple.h"
 #import <FDFullscreenPopGesture/UINavigationController+FDFullscreenPopGesture.h>
 #import <SDCycleScrollView/SDCycleScrollView.h>
+#import <YYText/YYText.h>
 
 #define kStatusBarHeight [[UIApplication sharedApplication] statusBarFrame].size.height
 #define kNavBarHeight 44.0
@@ -23,7 +24,7 @@
 
 #define kDevice_Is_iPhoneX ([UIScreen instancesRespondToSelector:@selector(currentMode)] ? CGSizeEqualToSize(CGSizeMake(1125, 2436), [[UIScreen mainScreen] currentMode].size) : NO)
 
-#define RGBA(r,g,b,a) [UIColor colorWithRed:r green:g blue:b alpha:a]
+#define RGBA(r,g,b,a) [UIColor colorWithRed:r/255.0 green:g/255.0 blue:b/255.0 alpha:a]
 #define BASE_BLUE_COLOR RGBA(0.35f, 0.68f, 1.0f, 1.0f)
 #define DARK_BLUE_COLOR RGBA(0.30, 0.64, 0.91, 1.0f)
 

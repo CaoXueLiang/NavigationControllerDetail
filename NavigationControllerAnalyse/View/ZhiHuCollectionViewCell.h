@@ -8,6 +8,8 @@
 
 #import <UIKit/UIKit.h>
 
+@class ZhiHuHotModel;
 @interface ZhiHuCollectionViewCell : UICollectionViewCell
-
+@property (nonatomic,strong) ZhiHuHotModel *model;
++ (CGSize)cellSizeWithModel:(ZhiHuHotModel *)model;
 @end
