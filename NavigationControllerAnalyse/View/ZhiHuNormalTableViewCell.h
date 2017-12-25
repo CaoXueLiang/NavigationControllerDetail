@@ -8,7 +8,7 @@
 
 #import <UIKit/UIKit.h>
 
-@interface ZhiHuNormalTableViewCell : UITableViewCell
+@interface ZhiHuNormalTableViewCell : UICollectionViewCell
 - (void)setTitle:(NSString *)title;
-+ (CGFloat)cellHeight;
++ (CGSize)cellSize;
 @end

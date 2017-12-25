@@ -37,7 +37,6 @@
 		C3CC55B21FEF60C300AD05F2 /* ZHiHuSeaarchHeaderView.m in Sources */ = {isa = PBXBuildFile; fileRef = C3CC55B11FEF60C300AD05F2 /* ZHiHuSeaarchHeaderView.m */; };
 		C3CC55B51FEF9B4E00AD05F2 /* ZhiHuHeaderView.m in Sources */ = {isa = PBXBuildFile; fileRef = C3CC55B41FEF9B4E00AD05F2 /* ZhiHuHeaderView.m */; };
 		C3CC55B81FEFB7DC00AD05F2 /* UICollectionViewLeftAlignedLayout.m in Sources */ = {isa = PBXBuildFile; fileRef = C3CC55B61FEFB7DC00AD05F2 /* UICollectionViewLeftAlignedLayout.m */; };
-		C3CC55BB1FEFED1B00AD05F2 /* ZhiHuSearchFootView.m in Sources */ = {isa = PBXBuildFile; fileRef = C3CC55BA1FEFED1B00AD05F2 /* ZhiHuSearchFootView.m */; };
 		CC0689C3DCECAA2A19E2A76B /* libPods-NavigationControllerAnalyse.a in Frameworks */ = {isa = PBXBuildFile; fileRef = BB62F8A1BCF3FF499908FF92 /* libPods-NavigationControllerAnalyse.a */; };
 /* End PBXBuildFile section */
 
@@ -105,8 +104,6 @@
 		C3CC55B41FEF9B4E00AD05F2 /* ZhiHuHeaderView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ZhiHuHeaderView.m; sourceTree = "<group>"; };
 		C3CC55B61FEFB7DC00AD05F2 /* UICollectionViewLeftAlignedLayout.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = UICollectionViewLeftAlignedLayout.m; sourceTree = "<group>"; };
 		C3CC55B71FEFB7DC00AD05F2 /* UICollectionViewLeftAlignedLayout.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = UICollectionViewLeftAlignedLayout.h; sourceTree = "<group>"; };
-		C3CC55B91FEFED1B00AD05F2 /* ZhiHuSearchFootView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ZhiHuSearchFootView.h; sourceTree = "<group>"; };
-		C3CC55BA1FEFED1B00AD05F2 /* ZhiHuSearchFootView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ZhiHuSearchFootView.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -246,8 +243,6 @@
 				58A1293B1FED10C6004CB1A8 /* ZhiHuCollectionViewCell.m */,
 				C3CC55B01FEF60C300AD05F2 /* ZHiHuSeaarchHeaderView.h */,
 				C3CC55B11FEF60C300AD05F2 /* ZHiHuSeaarchHeaderView.m */,
-				C3CC55B91FEFED1B00AD05F2 /* ZhiHuSearchFootView.h */,
-				C3CC55BA1FEFED1B00AD05F2 /* ZhiHuSearchFootView.m */,
 				C3CC55B31FEF9B4E00AD05F2 /* ZhiHuHeaderView.h */,
 				C3CC55B41FEF9B4E00AD05F2 /* ZhiHuHeaderView.m */,
 				58A129341FED0B99004CB1A8 /* ZhiHuSearchView.h */,
@@ -382,7 +377,6 @@
 			files = (
 				584083781FEA497D005044CC /* ZhiHuDailyViewController.m in Sources */,
 				C3CC55B21FEF60C300AD05F2 /* ZHiHuSeaarchHeaderView.m in Sources */,
-				C3CC55BB1FEFED1B00AD05F2 /* ZhiHuSearchFootView.m in Sources */,
 				587CA55B1FE8B5E1009A3B31 /* UINavigationBar+Simple.m in Sources */,
 				58A1292D1FECD3EA004CB1A8 /* CustomSearchController.m in Sources */,
 				58A1293C1FED10C6004CB1A8 /* ZhiHuCollectionViewCell.m in Sources */,

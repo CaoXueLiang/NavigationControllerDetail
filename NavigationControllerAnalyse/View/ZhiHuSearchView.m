@@ -8,10 +8,10 @@
 
 #import "ZhiHuSearchView.h"
 #import "ZhiHuCollectionViewCell.h"
+#import "ZhiHuNormalTableViewCell.h"
 #import "ZhiHuHotModel.h"
 #import "UICollectionViewLeftAlignedLayout.h"
 #import "ZHiHuSeaarchHeaderView.h"
-#import "ZhiHuSearchFootView.h"
 
 @interface ZhiHuSearchView()<UICollectionViewDataSource,UICollectionViewDelegate, UICollectionViewDelegateLeftAlignedLayout>
 @property (nonatomic,strong) UICollectionView *myCollection;
@@ -32,15 +32,29 @@
 }
 
 #pragma mark - UICollectionViewDataSource
+- (NSInteger)numberOfSectionsInCollectionView:(UICollectionView *)collectionView{
+    return 2;
+}
+
 - (NSInteger)collectionView:(UICollectionView *)collectionView numberOfItemsInSection:(NSInteger)section{
-    return self.hotArray.count;
+    if (section == 0) {
+       return self.hotArray.count;
+    }else{
+       return self.historyArray.count;
+    }
 }
 
 - (UICollectionViewCell *)collectionView:(UICollectionView *)collectionView cellForItemAtIndexPath:(NSIndexPath *)indexPath{
-    ZhiHuHotModel *model = self.hotArray[indexPath.item];
-    ZhiHuCollectionViewCell *cell = [collectionView dequeueReusableCellWithReuseIdentifier:@"ZhiHuCollectionViewCell" forIndexPath:indexPath];
-    cell.model = model;
-    return cell;
+    if (indexPath.section == 0) {
+        ZhiHuHotModel *model = self.hotArray[indexPath.item];
+        ZhiHuCollectionViewCell *cell = [collectionView dequeueReusableCellWithReuseIdentifier:@"ZhiHuCollectionViewCell" forIndexPath:indexPath];
+        cell.model = model;
+        return cell;
+    }else{
+        ZhiHuNormalTableViewCell *cell = [collectionView dequeueReusableCellWithReuseIdentifier:@"ZhiHuNormalTableViewCell" forIndexPath:indexPath];
+        [cell setTitle:self.historyArray[indexPath.row]];
+        return cell;
+    }
 }
 
 - (UICollectionReusableView *)collectionView:(UICollectionView *)collectionView
@@ -48,28 +62,34 @@
                                  atIndexPath:(NSIndexPath *)indexPath {
     if ([kind isEqual:UICollectionElementKindSectionHeader]) {
         ZHiHuSeaarchHeaderView *header = [collectionView dequeueReusableSupplementaryViewOfKind:UICollectionElementKindSectionHeader withReuseIdentifier:@"ZHiHuSeaarchHeaderView" forIndexPath:indexPath];
-        [header setTip:@"知乎热搜"];
+        if (indexPath.section == 0) {
+           [header setTip:@"知乎热搜"];
+        }else{
+           [header setTip:@"搜索历史"];
+        }
         return header;
-    }else if ([kind isEqual:UICollectionElementKindSectionFooter]){
-        ZhiHuSearchFootView *foot = [collectionView dequeueReusableSupplementaryViewOfKind:UICollectionElementKindSectionFooter withReuseIdentifier:@"ZhiHuSearchFootView" forIndexPath:indexPath];
-        foot.historyArray = self.historyArray;
-        return foot;
     }
     return nil;
 }
 
+- (void)scrollViewDidScroll:(UIScrollView *)scrollView{
+    if ([self.delegate respondsToSelector:@selector(scrollViewDidScroll)]) {
+        [self.delegate scrollViewDidScroll];
+    }
+}
+
 #pragma mark - UICollectionViewDelegateLeftAlignedLayout
 - (CGSize)collectionView:(UICollectionView *)collectionView layout:(UICollectionViewLayout *)collectionViewLayout sizeForItemAtIndexPath:(NSIndexPath *)indexPath{
-    ZhiHuHotModel *model = self.hotArray[indexPath.item];
-    return [ZhiHuCollectionViewCell cellSizeWithModel:model];
+    if (indexPath.section == 0) {
+        ZhiHuHotModel *model = self.hotArray[indexPath.item];
+        return [ZhiHuCollectionViewCell cellSizeWithModel:model];
+    }else{
+        return [ZhiHuNormalTableViewCell cellSize];
+    }
 }
 
 - (CGSize)collectionView:(UICollectionView *)collectionView layout:(UICollectionViewLayout *)collectionViewLayout referenceSizeForHeaderInSection:(NSInteger)section {
     return [ZHiHuSeaarchHeaderView headerSize];
-}
-
-- (CGSize)collectionView:(UICollectionView *)collectionView layout:(UICollectionViewLayout*)collectionViewLayout referenceSizeForFooterInSection:(NSInteger)section{
-    return [ZhiHuSearchFootView footSizeWithArray:self.historyArray];
 }
 
 - (CGFloat)collectionView:(UICollectionView *)collectionView layout:(UICollectionViewLayout*)collectionViewLayout minimumLineSpacingForSectionAtIndex:(NSInteger)section{
@@ -84,9 +104,13 @@
     return UIEdgeInsetsMake(10, 10, 10, 10);
 }
 
-
 - (void)collectionView:(UICollectionView *)collectionView didSelectItemAtIndexPath:(NSIndexPath *)indexPath{
-    
+    if (indexPath.section == 0) {
+        ZhiHuHotModel *model = self.hotArray[indexPath.item];
+        NSLog(@"%@",model.tip);
+    }else{
+        NSLog(@"%@",self.historyArray[indexPath.row]);
+    }
 }
 
 #pragma mark - Setter && Getter
@@ -99,8 +123,8 @@
         _myCollection.dataSource = self;
         _myCollection.delegate = self;
         [_myCollection registerClass:[ZhiHuCollectionViewCell class] forCellWithReuseIdentifier:@"ZhiHuCollectionViewCell"];
+        [_myCollection registerClass:[ZhiHuNormalTableViewCell class] forCellWithReuseIdentifier:@"ZhiHuNormalTableViewCell"];
         [_myCollection registerClass:[ZHiHuSeaarchHeaderView class] forSupplementaryViewOfKind:UICollectionElementKindSectionHeader withReuseIdentifier:@"ZHiHuSeaarchHeaderView"];
-        [_myCollection registerClass:[ZhiHuSearchFootView class] forSupplementaryViewOfKind:UICollectionElementKindSectionFooter withReuseIdentifier:@"ZhiHuSearchFootView"];
     }
     return _myCollection;
 }

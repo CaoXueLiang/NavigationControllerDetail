@@ -8,6 +8,10 @@
 
 #import <UIKit/UIKit.h>
 
-@interface ZhiHuSearchView : UIView
+@protocol ZhiHuSearchViewDelegate <NSObject>
+- (void)scrollViewDidScroll;
+@end
 
+@interface ZhiHuSearchView : UIView
+@property (nonatomic,weak) id<ZhiHuSearchViewDelegate> delegate;
 @end

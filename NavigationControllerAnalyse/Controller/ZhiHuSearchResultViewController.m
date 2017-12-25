@@ -10,7 +10,7 @@
 #import "CustomSearchController.h"
 #import "ZhiHuSearchView.h"
 
-@interface ZhiHuSearchResultViewController ()<UISearchBarDelegate>
+@interface ZhiHuSearchResultViewController ()<UISearchBarDelegate,ZhiHuSearchViewDelegate>
 @property (nonatomic,strong) CustomSearchController *searchController;
 @property (nonatomic,strong) ZhiHuSearchView *searchView;
 @end
@@ -51,10 +51,16 @@
     [self.navigationController popViewControllerAnimated:NO];
 }
 
+#pragma mark - 
+- (void)scrollViewDidScroll{
+   [self.searchController.customSearchBar resignFirstResponder];
+}
+
 #pragma mark - Setter && Getter
 - (ZhiHuSearchView *)searchView{
     if (!_searchView) {
         _searchView = [[ZhiHuSearchView alloc]initWithFrame:CGRectMake(0, 0, kScreenWidth, kScreenHeight - KTopHeight - KTabbarSafeBottomMargin)];
+        _searchView.delegate = self;
     }
     return _searchView;
 }

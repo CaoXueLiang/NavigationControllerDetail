@@ -12,15 +12,15 @@
 @property (nonatomic,strong) UILabel *tipLabel;
 @property (nonatomic,strong) UIImageView *leftImageView;
 @property (nonatomic,strong) UIButton *deleteButton;
+@property (nonatomic,strong) UIView *bottomLine;
 @end
 
 @implementation ZhiHuNormalTableViewCell
 #pragma mark - Init Menthod
-- (instancetype)initWithStyle:(UITableViewCellStyle)style reuseIdentifier:(NSString *)reuseIdentifier{
-    self = [super initWithStyle:style reuseIdentifier:reuseIdentifier];
+- (instancetype)initWithFrame:(CGRect)frame{
+    self = [super initWithFrame:frame];
     if (self) {
-        [self addSubViews];
-        self.selectionStyle = UITableViewCellSelectionStyleNone;
+       [self addSubViews];
     }
     return self;
 }
@@ -28,7 +28,7 @@
 - (void)addSubViews{
     [self.contentView addSubview:self.leftImageView];
     [self.leftImageView mas_makeConstraints:^(MASConstraintMaker *make) {
-        make.left.equalTo(self.contentView).offset(12);
+        make.left.equalTo(self.contentView).offset(2);
         make.centerY.equalTo(self.contentView);
         make.size.mas_equalTo(CGSizeMake(24, 24));
     }];
@@ -46,6 +46,8 @@
         make.left.equalTo(self.leftImageView.mas_right).offset(12);
         make.right.equalTo(self.deleteButton.mas_left).offset(10);
     }];
+    
+    [self.contentView addSubview:self.bottomLine];
 }
 
 #pragma mark - Event Response
@@ -58,8 +60,8 @@
     self.tipLabel.text = title ? : @"";
 }
 
-+ (CGFloat)cellHeight{
-    return 50;
++ (CGSize)cellSize{
+    return CGSizeMake(kScreenWidth, 30);
 }
 
 #pragma mark - Setter && Getter
@@ -87,6 +89,14 @@
         [_deleteButton addTarget:self action:@selector(deleteHistory) forControlEvents:UIControlEventTouchUpInside];
     }
     return _deleteButton;
+}
+
+- (UIView *)bottomLine{
+    if (!_bottomLine) {
+        _bottomLine = [[UIView alloc]initWithFrame:CGRectMake(0, 29, kScreenWidth, 1)];
+        _bottomLine.backgroundColor = RGBA(242, 242, 242, 1);
+    }
+    return _bottomLine;
 }
 
 @end
